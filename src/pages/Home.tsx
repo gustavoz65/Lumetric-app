@@ -26,16 +26,13 @@ function Home() {
         overflow: "hidden",
       }}
     >
-      {/* Black Hole Transition */}
       <BlackHoleTransition
         isActive={isTransitioning}
         onComplete={handleTransitionComplete}
       />
 
-      {/* Target Cursor */}
       <TargetCursor spinDuration={2} hideDefaultCursor={true} />
 
-      {/* Background Galaxy */}
       <div
         style={{
           position: "fixed",
@@ -49,7 +46,6 @@ function Home() {
         <Galaxy />
       </div>
 
-      {/* Header/Navbar */}
       <header
         style={{
           position: "fixed",
@@ -73,7 +69,6 @@ function Home() {
             margin: "0 auto",
           }}
         >
-          {/* Logo */}
           <div
             className="cursor-target"
             style={{
@@ -87,7 +82,6 @@ function Home() {
             Lumetric
           </div>
 
-          {/* Menu Items */}
           <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
             <a
               href="#produtos"
@@ -164,7 +158,6 @@ function Home() {
         </nav>
       </header>
 
-      {/* Main Content - Centralizado */}
       <div
         style={{
           position: "relative",
